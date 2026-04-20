@@ -1,6 +1,6 @@
 # Framework Studio ⬡
 
-A lightweight, browser-based visual builder for creating beautiful academic and research framework figures no dependencies, no server, no npm. Just open `index.html` and build.
+A lightweight, browser-based visual builder for creating beautiful academic and research framework figures, with no dependencies, no server, and no npm. Just open `index.html` and build.
 
 ![Framework Studio](https://img.shields.io/badge/version-1.0.0-c8922a?style=flat-square) ![License](https://img.shields.io/badge/license-MIT-14345a?style=flat-square) ![No Dependencies](https://img.shields.io/badge/dependencies-none-2d5a2d?style=flat-square)
 
@@ -16,12 +16,12 @@ Built for researchers, academics, and analysts who are tired of wrestling with P
 
 ## Features
 
-- **6 layout styles** — Analytical Stages, Flowchart, 2×2 Matrix, Timeline, Comparison, and Pillar
-- **6 color themes** — Navy, Forest, Midnight, Obsidian, Crimson, Slate
-- **Fully editable blocks** — add, remove, rename, and fill in bullet points live
-- **Export to PNG / JPG / SVG** — high resolution (2.5× scale), ready for print or submission
-- **Zero dependencies** — pure HTML, CSS, and vanilla JS (plus html2canvas for export)
-- **No install, no build step** — open `index.html` in Chrome and you're done
+- **6 layout styles** Analytical Stages, Flowchart, 2×2 Matrix, Timeline, Comparison, and Pillar
+- **6 color themes** Navy, Forest, Midnight, Obsidian, Crimson, Slate
+- **Fully editable blocks** add, remove, rename, and fill in bullet points live
+- **Export to PNG / JPG / SVG** high resolution (2.5× scale), ready for print or submission
+- **Zero dependencies** pure HTML, CSS, and vanilla JS (plus html2canvas for export)
+- **No install, no build step** open `index.html` in Chrome and you're done
 
 ---
 
@@ -162,19 +162,19 @@ Chrome is recommended for the most accurate export output.
 
 ## Contributing
 
-Pull requests are welcome. For major changes, open an issue first to discuss what you'd like to change. Fork the repo, create a feature branch (`git checkout -b feature/new-layout`), commit your changes, push, and open a Pull Request.
+Just to let you know, pull requests are welcome. For major changes, open an issue first to discuss what you'd like to change. Fork the repo, create a feature branch (`git checkout -b feature/new-layout`), commit your changes, push, and open a Pull Request.
 
 ---
 
 ## License
 
-MIT © 2025 — free to use, modify, and distribute.
+MIT © 2025 free to use, modify, and distribute.
 
 ---
 
 ## Screenshot
 
-> Generate a framework, screenshot it, and drop it here as `screenshot.png` in the root folder.
+Generate a framework, take a screenshot, and drop it here as `screenshot.png` in the root folder.
 
 
 ---
