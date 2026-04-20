@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Framework Studio</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+
+<aside class="sidebar">
+
+  <div class="sidebar-brand">
+    <div class="brand-mark">FS</div>
+    <div class="brand-text">
+      <div class="brand-name">Framework Studio</div>
+      <div class="brand-sub">Visual Builder</div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-label">Layout Style</div>
+    <div class="style-grid">
+      <div class="scard active" onclick="selectStyle('analytical')" id="card-analytical">
+        <div class="scard-icon">
+          <div class="si-analytical"><span></span><span></span><span></span></div>
+        </div>
+        <div class="scard-label">Analytical</div>
+      </div>
+      <div class="scard" onclick="selectStyle('flowchart')" id="card-flowchart">
+        <div class="scard-icon">
+          <div class="si-flow"><span></span><span class="arr">↓</span><span></span><span class="arr">↓</span><span></span></div>
+        </div>
+        <div class="scard-label">Flowchart</div>
+      </div>
+      <div class="scard" onclick="selectStyle('matrix')" id="card-matrix">
+        <div class="scard-icon">
+          <div class="si-matrix"><span></span><span></span><span></span><span></span></div>
+        </div>
+        <div class="scard-label">Matrix</div>
+      </div>
+      <div class="scard" onclick="selectStyle('timeline')" id="card-timeline">
+        <div class="scard-icon">
+          <div class="si-timeline"><span></span><span></span><span></span><span></span></div>
+        </div>
+        <div class="scard-label">Timeline</div>
+      </div>
+      <div class="scard" onclick="selectStyle('comparison')" id="card-comparison">
+        <div class="scard-icon">
+          <div class="si-compare"><span></span><span class="divv"></span><span></span></div>
+        </div>
+        <div class="scard-label">Comparison</div>
+      </div>
+      <div class="scard" onclick="selectStyle('hexagon')" id="card-hexagon">
+        <div class="scard-icon">
+          <div class="si-hex"><span></span><span></span><span></span></div>
+        </div>
+        <div class="scard-label">Pillar</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-label">Text</div>
+    <div class="field-group">
+      <label class="field-label">Title</label>
+      <input class="inp" id="cfg-title" type="text" value="Analytical Framework">
+    </div>
+    <div class="field-group">
+      <label class="field-label">Subtitle</label>
+      <input class="inp" id="cfg-subtitle" type="text" value="Formal Banking in Informal Settings">
+    </div>
+    <div class="field-group">
+      <label class="field-label">Source / Meta</label>
+      <input class="inp" id="cfg-meta" type="text" value="World Bank Survey · 2017–2025">
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-label">Theme</div>
+    <div class="theme-swatches">
+      <button class="swatch active" style="--c:#0a1f35" onclick="setTheme('navy',this)" title="Navy"></button>
+      <button class="swatch" style="--c:#1a3328" onclick="setTheme('forest',this)" title="Forest"></button>
+      <button class="swatch" style="--c:#1e1024" onclick="setTheme('midnight',this)" title="Midnight"></button>
+      <button class="swatch" style="--c:#141414" onclick="setTheme('obsidian',this)" title="Obsidian"></button>
+      <button class="swatch" style="--c:#6b1414" onclick="setTheme('crimson',this)" title="Crimson"></button>
+      <button class="swatch" style="--c:#1a2e4a" onclick="setTheme('slate',this)" title="Slate"></button>
+    </div>
+  </div>
+
+  <div class="panel panel-blocks">
+    <div class="panel-label">
+      Blocks
+      <button class="pill-btn" onclick="addBlock()">＋ Add</button>
+    </div>
+    <div id="block-list"></div>
+  </div>
+
+  <div class="sidebar-footer">
+    <button class="build-btn" onclick="buildFramework()">
+      <span class="build-icon">▶</span> Generate
+    </button>
+    <div class="export-group">
+      <span class="export-label">Export</span>
+      <div class="export-btns">
+        <button class="xbtn" onclick="exportAs('png')">PNG</button>
+        <button class="xbtn" onclick="exportAs('jpg')">JPG</button>
+        <button class="xbtn" onclick="exportAs('svg')">SVG</button>
+      </div>
+    </div>
+  </div>
+
+</aside>
+
+<main class="stage">
+  <div class="stage-bar">
+    <div class="stage-bar-left">
+      <span class="stage-dot"></span>
+      <span id="style-label">Analytical Stages</span>
+    </div>
+    <span class="stage-bar-hint">Edit → Generate</span>
+  </div>
+  <div class="stage-canvas">
+    <div id="output"></div>
+  </div>
+</main>
+
+<div id="toast"></div>
+
+<script src="frameworks/analytical.js"></script>
+<script src="frameworks/flowchart.js"></script>
+<script src="frameworks/matrix.js"></script>
+<script src="frameworks/timeline.js"></script>
+<script src="frameworks/comparison.js"></script>
+<script src="frameworks/hexagon.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
