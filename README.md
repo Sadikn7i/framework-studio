@@ -1,6 +1,6 @@
 # Framework Studio ⬡
 
-A lightweight, browser-based visual builder for creating beautiful academic and research framework figures — no dependencies, no server, no npm. Just open `index.html` and build.
+A lightweight, browser-based visual builder for creating beautiful academic and research framework figures no dependencies, no server, no npm. Just open `index.html` and build.
 
 ![Framework Studio](https://img.shields.io/badge/version-1.0.0-c8922a?style=flat-square) ![License](https://img.shields.io/badge/license-MIT-14345a?style=flat-square) ![No Dependencies](https://img.shields.io/badge/dependencies-none-2d5a2d?style=flat-square)
 
@@ -8,7 +8,7 @@ A lightweight, browser-based visual builder for creating beautiful academic and 
 
 ## What is this?
 
-Framework Studio lets you design publication-quality conceptual framework figures — the kind you'd put in a dissertation, journal paper, World Bank report, or conference poster. Pick a layout style, customise your blocks, choose a colour theme, and export as PNG, JPG, or SVG in seconds.
+Framework Studio lets you design publication-quality conceptual framework figures — the kind you'd put in a dissertation, journal paper, World Bank report, or conference poster. Pick a layout style, customize your blocks, choose a color theme, and export as PNG, JPG, or SVG in seconds.
 
 Built for researchers, academics, and analysts who are tired of wrestling with PowerPoint boxes and misaligned arrows.
 
@@ -17,7 +17,7 @@ Built for researchers, academics, and analysts who are tired of wrestling with P
 ## Features
 
 - **6 layout styles** — Analytical Stages, Flowchart, 2×2 Matrix, Timeline, Comparison, and Pillar
-- **6 colour themes** — Navy, Forest, Midnight, Obsidian, Crimson, Slate
+- **6 color themes** — Navy, Forest, Midnight, Obsidian, Crimson, Slate
 - **Fully editable blocks** — add, remove, rename, and fill in bullet points live
 - **Export to PNG / JPG / SVG** — high resolution (2.5× scale), ready for print or submission
 - **Zero dependencies** — pure HTML, CSS, and vanilla JS (plus html2canvas for export)
@@ -129,10 +129,10 @@ const renders = {
 
 | Browser | Status |
 |---|---|
-| Chrome 90+ | ✅ Fully supported |
-| Edge 90+ | ✅ Fully supported |
-| Firefox | ⚠️ Works, export may vary |
-| Safari | ⚠️ Works, export may vary |
+| Chrome 90+ | Fully supported |
+| Edge 90+ | Fully supported |
+| Firefox | Works, export may vary |
+| Safari | Works, export may vary |
 
 Chrome is recommended for the most accurate export output.
 
@@ -176,7 +176,6 @@ MIT © 2025 — free to use, modify, and distribute.
 
 > Generate a framework, screenshot it, and drop it here as `screenshot.png` in the root folder.
 
-![screenshot](screenshot.png)
 
 ---
 
