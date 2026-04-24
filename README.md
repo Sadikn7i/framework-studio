@@ -1,4 +1,4 @@
-# Framework Studio ⬡
+
 
 A lightweight, browser-based visual builder for creating beautiful academic and research framework figures, with no dependencies, no server, and no npm. Just open `index.html` and build.
 
